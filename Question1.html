@@ -1,0 +1,29 @@
+<html>
+<head>
+<title> Day6 Assignment</title>
+<script type="text/javascript">
+  var c = ["blue", "pink", "yellow", "red"];
+
+  function changeColor() {
+    setTimeout(function loop() {
+      document.bgColor = c.shift();
+      if (c.length) {
+        setTimeout(loop, 5000);
+      }
+    }, 5000);
+  }
+
+  function start() {
+    setInterval(changeColor(), 20000);
+  }
+</script>
+<script src="iterate.js"></script>
+</head>
+
+
+<body onload="start()">
+
+<h1> Assignment1 </h1>
+<script src="iterate.js"></script>
+</body>
+</html>
